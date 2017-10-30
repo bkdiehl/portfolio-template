@@ -1,0 +1,50 @@
+$portfolio-margin: 30px;
+
+.portfolio-list {
+	position:relative;
+	background: rgba($avian-blue,.6);
+
+	.portfolio-item {
+		background: $avian-peach;
+		position:relative;
+		width:100%;
+		max-width:500px;
+		white-space: normal;
+
+		a {
+			color: #fff;
+			img {
+				opacity: .7;
+				transition: .3s opacity;
+			}
+			&:hover {
+				color: #fff;
+				img {
+					opacity: 1;
+				}
+			}
+
+		}
+
+		&-title {
+			position:absolute;
+			bottom:0;
+			left:0;
+			right:0;
+			margin:0;
+			padding:15px 0;
+			background-color: $avian-gold;
+		}
+
+		@media(min-width: $screen-xs) and (max-width:$screen-md - 1) {
+			width:calc(50% - #{$portfolio-margin} / 2);
+		}
+
+		@media(min-width:$screen-md) {
+			// * 2 for the two margins
+			// / 3 for the three items
+			width:calc(33.33% - #{$portfolio-margin} * 2 / 3);
+		}
+		
+	}
+}

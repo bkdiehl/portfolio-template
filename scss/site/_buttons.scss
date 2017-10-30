@@ -1,0 +1,47 @@
+$partial-corner-x: 45px;
+$partial-corner-y: 25px;
+$partial-color: #fff;
+$partial-border-width: 3px;
+
+.btn {
+	&-partial {
+		position:relative;
+		color: $partial-color;
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: $partial-corner-x;
+			height: $partial-corner-y;
+			transition: .3s width, .3s height;
+		}
+
+		&:before {
+			top:0;
+			left:0;
+			border-top: $partial-border-width solid $partial-color;
+			border-left: $partial-border-width solid $partial-color;
+		}
+
+		&:after {
+			bottom:0;
+			right:0;
+			border-bottom: $partial-border-width solid $partial-color;
+			border-right: $partial-border-width solid $partial-color;
+		}
+
+		&:hover {
+			color: $partial-color;
+
+			&:before, &:after {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	&-fat {
+		padding: 12px 20px;
+	}
+}

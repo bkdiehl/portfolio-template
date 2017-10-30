@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bromwyn Diehl</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+	<section class="banner text-center">
+		<div class="container gutter-lg">
+			<img class="logo" src="images/logo.png" alt="AvianByDesign">
+			<h1 class="text-uppercase gutter-top-lg gutter-bottom">Avian By Design</h1>
+			<h3 class="no-gutter-bottom">Graphic Design | Illustration</h3>
+		</div>
+	</section>
+
+	<section class="portfolio-list text-center">
+		<div class="container">
+			<h2 class="section-title gutter-bottom-lg">Portfolio</h2>
+			<div class="portfolio-items">
+				<div class="portfolio-item">
+					<a href="#">
+					<img class="img-responsive center-block" src="http://via.placeholder.com/500x900" alt="Some Title">
+					<h4 class="portfolio-item-title">Some Project</h4></a>
+				</div>
+				<div class="portfolio-item">
+					<a href="#">
+					<img class="img-responsive center-block" src="http://via.placeholder.com/500x400" alt="Some Title">
+					<h4 class="portfolio-item-title">Some Project</h4></a>
+				</div>
+				<div class="portfolio-item">
+					<a href="#">
+					<img class="img-responsive center-block" src="http://via.placeholder.com/500x500" alt="Some Title">
+					<h4 class="portfolio-item-title">Some Project</h4></a>
+				</div>
+				<div class="portfolio-item">
+					<a href="#">
+					<img class="img-responsive center-block" src="http://via.placeholder.com/800x500" alt="Some Title">
+					<h4 class="portfolio-item-title">Some Project</h4></a>
+				</div>
+				<div class="portfolio-item">
+					<a href="#">
+					<img class="img-responsive center-block" src="http://via.placeholder.com/500x500" alt="Some Title">
+					<h4 class="portfolio-item-title">Some Project</h4></a>
+				</div>
+			</div>
+			<h3 class="section-subtitle">Have a project?</h3>
+			<a href="/contact" class="btn btn-partial btn-lg">drop me a line</a>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<h2 class="section-title gutter-bottom">About Bromwyn</h2>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="social text-center">
+				<ul class="list-unstyled list-inline">
+					<li><a><img src="images/facebook.png" alt="facebook"></a></li>
+					<li><a><img src="images/instagram.png" alt="instagram"></a></li>
+					<li><a><img src="images/email.png" alt="email"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<div class="portfolio-background" style="background-image: url(images/portfolio-background.jpg)"></div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/imagesLoaded.min.js"></script>
+	<script type="text/javascript" src="js/packery.min.js"></script>
+	<script type="text/javascript">
+		var grid = $('.portfolio-items').imagesLoaded(function() {
+			grid.packery({
+				gutter: 30
+			});
+		})
+	</script>
+</body>
+</html>

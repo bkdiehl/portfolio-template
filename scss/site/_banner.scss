@@ -1,0 +1,23 @@
+.banner {
+	.logo {
+		max-width: 120px;
+	}
+
+	@media(min-width: $screen-sm) {
+		h1 {
+			font-size: 50px;
+		}
+		h3 {
+			font-size: 28px;
+		}
+	}
+	
+	@media(min-width: $screen-md) {
+		h1 {
+			font-size: 64px;
+		}
+		h3 {		
+			font-size: 36px;
+		}
+	}
+}

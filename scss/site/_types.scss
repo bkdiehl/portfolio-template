@@ -1,0 +1,111 @@
+$gutter: 15px !default;
+$gutter-sm: 5px !default;
+$gutter-lg: 30px !default;
+$gutter-xl: 60px !default;
+
+/*#region vertical gutters*/
+.no-gutter-top {
+	margin-top: 0 !important;
+}
+
+.no-gutter-bottom {
+	margin-bottom: 0 !important;
+}
+
+.no-gutter {
+	@extend .no-gutter-top;
+	@extend .no-gutter-bottom;
+}
+
+.gutter-top-sm {
+	margin-top: $gutter-sm !important;
+}
+
+.gutter-bottom-sm {
+	margin-bottom: $gutter-sm !important;
+}
+
+.gutter-sm {
+	@extend .gutter-top-sm;
+	@extend .gutter-bottom-sm;
+}
+
+.gutter-top {
+	margin-top: $gutter !important;
+}
+
+.gutter-bottom {
+	margin-bottom: $gutter !important;
+}
+
+.gutter {
+	@extend .gutter-top;
+	@extend .gutter-bottom;
+}
+
+.gutter-top-lg {
+	margin-top: $gutter-lg;
+}
+
+.gutter-bottom-lg {
+	margin-bottom: $gutter-lg;
+}
+
+.gutter-lg {
+	@extend .gutter-top-lg;
+	@extend .gutter-bottom-lg;
+}
+
+.gutter-top-xl {
+	margin-top: $gutter-lg;
+    @media(min-width:$screen-sm){
+	    margin-top: $gutter-xl;
+    }
+}
+
+.gutter-bottom-xl {
+	margin-bottom: $gutter-lg;
+    @media(min-width:$screen-sm){
+	    margin-bottom: $gutter-xl;
+    }
+}
+
+.gutter-xl {
+	@extend .gutter-top-xl;
+	@extend .gutter-bottom-xl;
+}
+/*#endregion*/
+
+/*#region horizontal gutters*/
+.gutter-left-sm {
+	margin-left: $gutter-sm;
+}
+
+.gutter-right-sm {
+	margin-right: $gutter-sm;
+}
+
+.gutter-left {
+	margin-left: $gutter;
+}
+
+.gutter-right {
+	margin-right: $gutter;
+}
+
+.gutter-left-auto {
+	margin-left: auto;
+}
+
+.gutter-right-auto {
+	margin-left: auto;
+}
+
+.gutter-left-lg {
+	margin-left: $gutter-lg;
+}
+
+.gutter-right-lg {
+	margin-right: $gutter-lg;
+}
+/*#endregion*/
