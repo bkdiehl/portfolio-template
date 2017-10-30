@@ -15,6 +15,7 @@ $portfolio-margin: 30px;
 			color: #fff;
 			img {
 				opacity: .7;
+				backface-visibility: hidden;
 				transition: .3s opacity;
 			}
 			&:hover {
